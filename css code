@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jhalak Gupta's Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the portfolio */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 1.5px;
+            animation: fadeInDown 1.5s;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 4rem 0;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeInUp 1s;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #6a11cb;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            transform: scale(1.05);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .project-item {
+            background-color: #fff;
+            padding: 1.5rem;
+            flex: 0 1 calc(33.333% - 20px);
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2575fc;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jhalak Gupta's Creative Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Jhalak Gupta, a passionate Computer Science student specializing in Artificial Intelligence and web development. I love creating visually appealing and functional websites. Welcome to my creative space!</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>Frontend Development</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <h3>Communication Website</h3>
+                    <p>Developed a communication platform using HTML, CSS, and JavaScript for seamless user interactions.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Online Voting System</h3>
+                    <p>Built an efficient and secure online voting platform using advanced C++ algorithms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <p>Email: <a href="mailto:jhalagupta04@gmail.com">jhalagupta04@gmail.com</a></p>
+                <p>Phone: 9118257506</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jhalak Gupta. All rights reserved.</p>
+    </footer>
+</body>
+</html>
